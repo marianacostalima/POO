@@ -1,5 +1,31 @@
 ## jshell:
-
  Welcome to JShell -- Version 11.0.18
  For an introduction type: /help intro
+
+## jshell> int array[] = new int[100];
+array ==> int[100] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ... , 0, 0, 0, 0, 0, 0, 0, 0 }
+
+## jshell>  double[] x = new double[20];
+x ==> double[20] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0 ...  0.0, 0.0, 0.0, 0.0, 0.0 }
+
+## jshell> String nomes[] = new String[5];
+nomes ==> String[5] { null, null, null, null, null }
+
+## jshell> boolean y[] = new boolean[5];
+y ==> boolean[5] { false, false, false, false, false }
+
+## jshell> int tamanho = nomes.length;
+tamanho ==> 5
+
+## jshell>  array[10] = 777;
+$6 ==> 777
+
+## jshell> Arrays.toString(array)
+$7 ==> "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 777, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+
+## jshell> array[20] = 7;
+$8 ==> 7
+
+## jshell> Arrays.toString(array)
+$9 ==> "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 777, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
 
