@@ -27,26 +27,22 @@ O sistema deve exibir as seguintes alternativas:
 
 
 ```
-//importação da classe Scanner do pacote java.util
-import java.util.Scanner; 
+import java.util.Scanner;   //importa a classe Scanner do pacote java.util
 
 public class Atv08
 {
 
     final static Scanner leitor = new Scanner(System.in); //prepara a entrada de dados
     final static String nomesClientes[] = new String[10]; //declaração e alocação do vetor assentos 
-    final static boolean assentos[] = new boolean[10]; //declaração e alocação do vetor assentos 
-    // 0 a 5 primeira classe
-    // 6 a 10 classe economica
+    final static boolean assentos[] = new boolean[10]; 
+    
+    // 0 a 5 primeira classe e de 6 a 10 classe economica    
     // todos os assentos como false pois estão "vazios"
-
-
+    
     public static void CompraAssento(){
-        //mensagem de orientação
-		System.out.println("Por favor digite 1 para Primeira Classe e digite 2 para Classe Econômica");
+		System.out.println("Por favor digite 1 para Primeira Classe e digite 2 para Classe Econômica");  //mensagem de orientação
 
-        //entrada para a classe de compra
-        int entrada = leitor.nextInt();
+        int entrada = leitor.nextInt();         //entrada para a classe de compra
 
         if (entrada == 1){ //se entrada == primeira classe
             int i = 0; // variavel para percorrer o vetor dos assentos
@@ -54,14 +50,14 @@ public class Atv08
 
             do{ //para percorrer pelo menos uma vez
                 if (i == 5){ //apenas 5 assentos da primeira classe
-                    //mensagens de orientação
+
                     System.out.println("===========================================\n");
                     System.out.println("Todos os assentos da primeira classe estão cheios");
                     System.out.println("===========================================\n");
 
                     for(int hj = 5; hj<11; hj++){ //percorrendo o vetor na classe economica
                         if (assentos[hj] == false){
-                            //mensagens de orientação
+			
                             System.out.println("Possuem assentos disponiveis na classe economica");
                             System.out.println("deseja comprar assentos ? (1 (sim) 2 (não)0)");
 
@@ -70,22 +66,20 @@ public class Atv08
                             if (a == 1){
                                 CompraAssento(); //chama a função para a compra novamente
                             } else{
-                                //mensagens de orientação
+                       
                                 System.out.println("===========================================\n");
                                 System.out.println("Pena que não sera possivel realizar a compra :(");
                                 System.out.println("===========================================\n");
                             }
 
                             break; //fim do for
-
                         }
                     }
-
                     break;
                 }
 
                 if (assentos[i] == false){ //se achou um assento vazio (false)
-                    System.out.println("digite seu nome para a compra"); //mensagen de orientação
+                    System.out.println("digite seu nome para a compra"); 
                     String nomeCliente = leitor.next(); //entrada do nome do cliente em String
                     nomesClientes[i] = nomeCliente; //adicionando no vetor o nome do cliente
                     assentos[i] = true; //colocando que o assento foi vendido
@@ -95,8 +89,8 @@ public class Atv08
                 }
 
             }while(achouAssento); //repete se nao achou um assento
-
         }
+	
         if (entrada == 2){ //se entrada == classe economica
             int i = 5; //variavel que começa em 5 (assentos de 5 a 10)
             boolean achouAssento = true; //axiliando para achar um assentos
@@ -121,11 +115,8 @@ public class Atv08
                                 System.out.println("Pena que não sera possivel realizar a compra :(");
                                 System.out.println("===========================================\n");
                             }
-
                             break;
-
                         }
-
                     }
 
                     System.out.println("===========================================\n");
@@ -146,17 +137,11 @@ public class Atv08
                 }
 
             }while(achouAssento);
-
         }
-
-        
     }
-
-    
     
 	public static void main(String[] args) { //primeira classe a ser executada no código
 
-        //mensagens de orientação
         System.out.println("\n");
         System.out.println("bem vindo a novo sistema automatizado de reservas. \n");
         
@@ -165,13 +150,12 @@ public class Atv08
             System.out.println("\n A seguir os assentos disponiveis ou não");
             System.out.println("primeira classe a seguir: ");
             for(int a = 0; a<10; a++){ //repete 10x (10 assentos)
-                //listando os assentos disponiveis
-                System.out.println(assentos[a]+ "\t"+ nomesClientes[a]); 
+	    
+                System.out.println(assentos[a]+ "\t"+ nomesClientes[a]);                  //verificando os assentos disponiveis
                 if (a == 4){
                 System.out.println("classe economica a seguir: ");
                 }
         }
-
             CompraAssento();
         }
 
@@ -180,9 +164,6 @@ public class Atv08
         System.out.println("©Copyright 2023 by Gabriel. All rights reversed.");
 
 	}
-
-
-    
 }
 
 
