@@ -9,11 +9,11 @@ Os métodos imprimirNumeros e somaNumeros devem ser implementados dentro da clas
 Utilize estruturas de repetição e operações matemáticas para calcular a soma dos números.
 
 
-IFPR - Campus Cascavel
-Aluno: Mariana da Costa Lima
-Turma: 3° INF 2023
-Disciplina: Programação orientada a Objetos 
-Professor: Nelson Bellincanta
+## IFPR - Campus Cascavel
+## Aluno: Mariana da Costa Lima
+## Turma: 3° INF 2023
+## Disciplina: Programação orientada a Objetos 
+## Professor: Nelson Bellincanta
 
 ```
 public class ExSemRetorno{                                                  // Declaração da classe e início da classe Main 
