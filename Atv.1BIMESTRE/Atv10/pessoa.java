@@ -1,5 +1,6 @@
-public class Pessoa{
-    //nome, idade e altura
+public class pessoa{
+
+//nome, idade e altura
   private String nome;
   private int idade;
   private double altura;
