@@ -1,10 +1,10 @@
 
-public class Mamiferos{
+public class mamiferos{
     private String name; //atributo String nome
     private int age; //atributo int idade
 
     //met const da classe
-    public Mamiferos(String namee, int agee){
+    public mamiferos(String namee, int agee){
         this.name = namee;
         this.age = agee;
     }
