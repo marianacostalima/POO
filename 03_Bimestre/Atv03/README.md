@@ -1,8 +1,10 @@
-# ATV 01 - 03 BIMESTRE
+# ATV 03 - 03 BIMESTRE
 
 IFPR - Campus Cascavel
 
-Disciplina: Programação orientada a Objetos Professor: Nelson Bellincanta
+Disciplina: Programação orientada a Objetos 
+
+Professor: Nelson Bellincanta
 
 Turma: 3° INF 2023
 
