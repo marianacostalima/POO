@@ -1,7 +1,12 @@
+# ATV 01 - 03 BIMESTRE
+
 IFPR - Campus Cascavel
-Disciplina: Programação orientada a Objetos 
-Professor: Nelson Bellincanta 
-Aluna: Mariana da Costa Lima
+
+Disciplina: Programação orientada a Objetos Professor: Nelson Bellincanta
+
+Turma: 3° INF 2023
+
+Aluno: Mariana da Costa Lima
 
 Suponha que você está desenvolvendo um sistema de gerenciamento de veículos para uma concessionária. Você precisa modelar diferentes tipos de veículos, como carros e motos, e também precisa implementar funcionalidades específicas para cada tipo de veículo.
 
