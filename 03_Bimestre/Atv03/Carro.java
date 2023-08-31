@@ -1,19 +1,19 @@
-// Início da definição da classe Automovel, que estende a classe Veiculo
-public class Automovel extends Veiculo {
+// Início da definição da classe Carro, que herda características da classe Veiculo
+public class Carro extends Veiculo {
     private int numeroDePortas;
-
-    // Construtor da classe Automovel, que chama o construtor da classe base Veiculo
-    public Automovel(String novaMarca, String novoModelo, int novoAno, int numeroDePortas) {
+    
+    // Construtor da classe Carro, invocando o construtor da classe base Veiculo
+    public Carro(String novaMarca, String novoModelo, int novoAno, int numeroDePortas) {
         super(novaMarca, novoModelo, novoAno); // Chamada ao construtor da classe base
         this.numeroDePortas = numeroDePortas;
     }
-
-    // Método getter para obter o número de portas do automóvel
+    
+    // Método getter para obter o número de portas do carro
     public int getNumeroDePortas() {
         return numeroDePortas;
     }
-
-    // Método setter para definir o número de portas do automóvel
+    
+    // Método setter para definir o número de portas do carro
     public void setNumeroDePortas(int numeroDePortas) {
         this.numeroDePortas = numeroDePortas;
     }
@@ -21,8 +21,8 @@ public class Automovel extends Veiculo {
     // Sobrescrita do método mostrarDetalhes da classe base Veiculo
     @Override
     public void mostrarDetalhes() {
-        super.mostrarDetalhes(); // Chamada ao método da classe base
+        super.mostrarDetalhes(); // Invocação do método da classe base
         System.out.println("Número de Portas: " + numeroDePortas);
     }
-
-} // Fim da definição da classe Automovel
+    
+} // Fim da definição da classe Carro
